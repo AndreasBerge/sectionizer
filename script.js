@@ -24,7 +24,7 @@ function sectionMaker(text) {
             charCount = 0;
         } else output = output + char;
     }
-    counter.textContent = `${charCountDisplay} characters in ${paraCountDisplay} paragraph(s)`;
+    counter.textContent = `${charCountDisplay} characters in ${paraCountDisplay} section(s)`;
     return outputText.innerHTML = output;
 }
 
