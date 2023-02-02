@@ -2,6 +2,9 @@ const inputText = document.querySelector("textarea");
 const outputText = document.querySelector("#outputText");
 const counter = document.querySelector("span");
 
+/* TODO
+min antall chars og punktum = avsnitt
+*/
 
 function sectionMaker(text) {
     let output = "";
@@ -9,16 +12,16 @@ function sectionMaker(text) {
     let charCount = 0;
     let paraCountDisplay = 1;
     for (let char of text) {
-        if (char !== " ") charCount++
+        if (char !== " ") charCount++;
         if (char === ".") {
-            pointCount++
+            pointCount++;
         }
-        if (pointCount === 5) {
-            paraCountDisplay++
+        if (pointCount >= 5 && charCount > 500 && char === ".") {
+            paraCountDisplay++;
             output = output + char + "<br><br>";
-            outputText.textContent = output
+            outputText.textContent = output;
             pointCount = 0;
-        } else output = output + char
+        } else output = output + char;
     }
     counter.textContent = `${charCount} characters in ${paraCountDisplay} paragraph(s)`;
     return outputText.innerHTML = output;
