@@ -7,23 +7,24 @@ min antall chars og punktum = avsnitt
 */
 
 function sectionMaker(text) {
+    const charList = [".", "!", "?"];
     let output = "";
-    let pointCount = 0;
     let charCount = 0;
+    let charCountDisplay = 0;
     let paraCountDisplay = 1;
     for (let char of text) {
-        if (char !== " ") charCount++;
-        if (char === ".") {
-            pointCount++;
+        if (char !== " ") {
+            charCount++;
+            charCountDisplay++;
         }
-        if (pointCount >= 5 && charCount > 500 && char === ".") {
+        if (charCount >= 500 && charList.includes(char)) {
             paraCountDisplay++;
             output = output + char + "<br><br>";
             outputText.textContent = output;
-            pointCount = 0;
+            charCount = 0;
         } else output = output + char;
     }
-    counter.textContent = `${charCount} characters in ${paraCountDisplay} paragraph(s)`;
+    counter.textContent = `${charCountDisplay} characters in ${paraCountDisplay} paragraph(s)`;
     return outputText.innerHTML = output;
 }
 
