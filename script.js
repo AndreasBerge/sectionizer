@@ -3,7 +3,7 @@ const outputText = document.querySelector("#outputText");
 const counter = document.querySelector("span");
 
 
-function paragraphMaker(text) {
+function sectionMaker(text) {
     let output = "";
     let pointCount = 0;
     let charCount = 0;
@@ -29,7 +29,7 @@ document.querySelector("button").addEventListener("click", () => {
         counter.textContent = "";
     }
     if (inputText.value) {
-        paragraphMaker(inputText.value);
+        sectionMaker(inputText.value);
         inputText.value = "";
     }
 })
