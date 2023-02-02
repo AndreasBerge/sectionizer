@@ -1,0 +1,57 @@
+html {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    letter-spacing: 0.1em;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+div {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    min-width: 400px;
+    max-width: 600px;
+}
+
+textarea {
+    width: 100%;
+    font-size: 1.05em;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+    border: none;
+
+}
+
+button {
+    font-style: italic;
+    font-size: 1.05em;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 13px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+
+button:active {
+    background-color: rgb(240, 233, 233);
+}
+
+span {
+    margin: 10px;
+}
+
+article {
+    font-size: 1.05em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 25px;
+    line-height: 1.35em;
+}
