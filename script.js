@@ -20,7 +20,7 @@ function sectionMaker(text) {
         if (charCount >= secLength && charList.includes(char)) {
             paraCountDisplay++;
             output = output + char + "<br><br>";
-            outputText.textContent = output;
+            // outputText.textContent = output;
             charCount = 0;
         } else output = output + char;
     }
