@@ -28,12 +28,24 @@ function sectionMaker(text) {
     return outputText.innerHTML = output;
 }
 
-document.querySelector("button").addEventListener("click", () => {
+function display() {
     if (!outputText.textContent) {
         counter.textContent = "";
     }
     if (inputText.value) {
         sectionMaker(inputText.value);
-        inputText.value = "";
+        // inputText.value = "";
     }
+}
+
+document.querySelector("#refreshButton").addEventListener("click", () => {
+    window.location.reload();
+})
+
+document.querySelector("#submitButton").addEventListener("click", () => {
+    display();
+})
+
+range.addEventListener("change", () => {
+    display();
 })

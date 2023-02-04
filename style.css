@@ -7,6 +7,20 @@ h1 {
     letter-spacing: 0.15em;
     text-align: center;
     font-size: 2.6em;
+    /* margin-bottom: 20px; */
+}
+
+button {
+    margin-bottom: 25px;
+    font-size: 1em;
+    font-style: it;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 7px;
+    padding-left: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
 }
 
 div {
@@ -55,7 +69,7 @@ label {
     font-style: italic;
 }
 
-button {
+#submitButton {
     font-size: 1.25em;
     font-family: 'Courier New', Courier, monospace;
     margin: 10px;
