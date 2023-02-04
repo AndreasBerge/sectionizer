@@ -11,8 +11,14 @@
 
 <body>
     <h1>Sectionizer</h1>
-    <div>
+    <div class="container">
         <textarea name="" placeholder="Enter text here and hit 'Submit'" id="inputText" cols="30" rows="10"></textarea>
+        <div id="sectionLength">
+            <input id="secLength" type="range" name="" id="" step="200" min="200" max="600">
+            <label for="secLength">
+                Use slider to adjust section length
+            </label>
+        </div>
         <button>Submit</button>
         <span></span>
         <article id="outputText">
