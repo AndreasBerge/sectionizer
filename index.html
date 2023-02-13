@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sectionizer</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <h1>Sectionizer</h1>
 
     <div class="container">
-        <button id="refreshButton">Refresh</button>
-        <textarea name="" placeholder="Enter text here and hit 'Submit'" id="inputText" cols="30" rows="10"></textarea>
-        <div id="sectionLength">
-            <input id="secLength" type="range" name="" id="" step="200" min="200" max="600">
-            <label for="secLength">
-                Use slider to adjust section length
-            </label>
-        </div>
-        <button id="submitButton">Submit</button>
-        <span></span>
-        <article id="outputText">
-
-        </article>
+      <button id="refreshButton">Refresh</button>
+      <textarea
+        name=""
+        placeholder="Enter text here and hit 'Submit'"
+        id="inputText"
+        cols="30"
+        rows="10"
+      ></textarea>
+      <div id="sectionLength">
+        <input
+          id="secLength"
+          type="range"
+          name=""
+          id=""
+          step="200"
+          min="200"
+          max="600"
+        />
+        <label for="secLength"> Use slider to adjust section length </label>
+      </div>
+      <button id="submitButton">Submit</button>
+      <span></span>
+      <article id="outputText"></article>
     </div>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
