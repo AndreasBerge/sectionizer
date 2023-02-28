@@ -5,16 +5,15 @@ const range = document.querySelector("input");
 
 function sectionMaker(text) {
   const secLength = range.value;
-  console.log(secLength);
   const charList = [".", "!", "?"];
   let output = "";
   let charCount = 0;
-  let charCountDisplay = 0;
+  // let charCountDisplay = 0;
   let secCountDisplay = 1;
   for (let char of text) {
     if (char !== " ") {
       charCount++;
-      charCountDisplay++;
+      // charCountDisplay++;
     }
     if (charCount >= secLength && charList.includes(char)) {
       secCountDisplay++;
@@ -22,7 +21,13 @@ function sectionMaker(text) {
       charCount = 0;
     } else output = output + char;
   }
-  counter.textContent = `${charCountDisplay} characters in ${secCountDisplay} section(s)`;
+
+  const words = [];
+  for (let word of output.split(" ")) {
+    if (word === "") continue;
+    words.push(word.trim());
+  }
+  counter.textContent = `${words.length} words in ${secCountDisplay} section(s)`;
   return (outputText.innerHTML = output);
 }
 
